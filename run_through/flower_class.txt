@@ -1,0 +1,21 @@
+class: Flower
+
+attributes:
+
+color ("string"),
+name ("string"),
+numBlooms (int),
+blooms ([array]),
+isPlanted (boolean true || false),
+needsWater (boolean true || false),
+daysSinceWater (int),
+
+methods:
+
+cutBloom([i]); (pass an argument to select by index from the blooms array, remove that item from the array and decreases the value of numBlooms by 1),
+
+plantFlower(); (updates the value so isPlanted = true ),
+
+waterFlower(); (updates the value so needsWater = false , resets the value so daysSinceWater = 0),
+
+feedFlower(n); (pass an argument, increase the value of numBlooms by the number provided in the argument)

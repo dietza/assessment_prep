@@ -1,0 +1,21 @@
+instance: my Begonia
+
+attributes:
+
+color: "yellow",
+name: "begonia",
+numBlooms: blooms.length (3)
+blooms: ["firstBloom", "secondBloom", "thirdBloom"]
+isPlanted: false
+needsWater: true
+daysSinceWater: 3
+
+methods:
+
+this.cutBloom([2]); removes the index 2 item so now blooms = ["firstBloom", "secondBloom"], and numBlooms = 2
+
+this.plantFlower(); isPlanted = true
+
+this.waterFlower(); needsWater = false , daysSinceWater = 0
+
+this.feedFlower(2);  numBlooms = 4 (following cutBloom method)
