@@ -1,0 +1,21 @@
+instance: This almond butter jar
+
+material: "glass"
+contentsHistory: ["almond butter", "aquafaba", "water"]
+lidType: "metal screw-on"
+totalCapacityOz: 12
+currentCapacityOz: 0
+isEmpty: true
+isRecycled: false
+isClean: true
+
+
+methods:
+
+this.addContents("lentils", 4); contentsHistory =  ["almond butter", "aquafaba", "water", "lentils"], currentCapacityOz = 4, isClean = false,  isEmpty = false,
+
+this.calculatePercentFull(); (4 / 12 = .33 <-return value) //logs 33%, isEmpty = false,
+
+this.washJar(); isClean = true, isEmpty = true,
+
+this.recycleJar(); isRecycled = true

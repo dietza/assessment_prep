@@ -1,0 +1,21 @@
+class: Jar
+
+material ("string"),
+contentsHistory ([array]),
+lidType ("string"),
+totalCapacityOz (int),
+currentCapacityOz (int),
+isEmpty (boolean, true || false),
+isRecycled (boolean, true || false),
+isClean (boolean, true || false),
+
+
+methods: 
+
+washJar (updates the values of isClean to true and isEmpty to true ),
+
+addContents(contents, oz) (pass arguments which will be added to the contentsHistory array and value of currentCapacityOz, also updates the values of isClean to false and isEmpty to false),
+
+calculatePercentFull (divides currentCapacityOz by totalCapacityOz and prints a return value, if the return value === 0, updates the value so isEmpty = true ),
+
+recycleJar (checks the values of isEmpty and isClean, returns an error IF isEmpty || isClean !== true , IF both of these values are true, updates the value so isRecycled is also true),
